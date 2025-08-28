@@ -71,15 +71,43 @@ Build Fast-API-Server-Brain-Tumor-Det from the source and install dependencies:
 
 ## Usage
 
-After completing the installation, you can run the application using Uvicorn (assuming the main FastAPI app is in `main.py`):
+After completing the installation, you can run the application directly from the command line:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+python main.py
 ```
 
-- Access the FastAPI documentation at `http://localhost:8000/docs`.
-- The Gradio interface may be accessible at `http://localhost:8000/gradio` or integrated within the app (check the code for specifics).
-- Upload brain MRI images via the API or UI to detect tumors using the YOLO model.
+This will start both the FastAPI server and the Gradio interface.
+
+- The **FastAPI** server will be available at `http://localhost:8000`.
+- The interactive **Gradio UI** will be available at `http://localhost:7860`.
+- API documentation (Swagger UI) can be accessed at `http://localhost:8000/docs`.
+
+## Running with Docker
+
+Alternatively, you can run the entire application using Docker and Docker Compose, which handles all dependencies and setup automatically.
+
+### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Instructions
+
+1.  **For Windows Users:**
+    Simply double-click and run the `build_and_run.cmd` script in the project's root directory.
+
+2.  **For macOS/Linux Users (or manually):**
+    Open your terminal in the project's root directory and run the following command:
+    ```bash
+    docker-compose up --build
+    ```
+
+After starting the container, the services will be available at the same addresses:
+
+- **FastAPI Server**: `http://localhost:8000`
+- **Gradio UI**: `http://localhost:7860`
+- **API Documentation**: `http://localhost:8000/docs`
 
 ## License
 
