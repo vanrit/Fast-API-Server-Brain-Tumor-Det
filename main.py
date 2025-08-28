@@ -12,5 +12,8 @@ if __name__ == "__main__":
     threading.Thread(target=gradio_app.launch, kwargs={"server_name": "0.0.0.0", "server_port": 7860},
                      daemon=True).start()
 
+    # Вывод URL для FastAPI docs
+    print("FastAPI docs available at: http://localhost:8000/docs")
+
     # Запуск FastAPI на другом порту
     uvicorn.run(fastapi_app, host="0.0.0.0", port=8000)
