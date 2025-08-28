@@ -7,11 +7,13 @@ Transforming Brain Tumor Detection with Rapid Precision
 [![Languages](https://img.shields.io/github/languages/count/vanrit/Fast-API-Server-Brain-Tumor-Det)](https://github.com/vanrit/Fast-API-Server-Brain-Tumor-Det)
 
 ### Built with the tools and technologies:
+<div style="display: flex; gap: 10px;">
 <img src="https://github.com/tqdm/tqdm/raw/master/images/logo.gif" alt="tqdm" height="30" />
 <img src="https://fastapi.tiangolo.com/img/icon-white.svg" alt="FastAPI" height="30" />
 <img src="https://numpy.org/images/logo.svg" alt="NumPy" height="30" />
 <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python" height="30" />
 <img src="https://onnx.ai/images/icon/icon-ONNX-logo.svg" alt="ONNX" height="30" />
+</div>
 
 ## Table of Contents
 
@@ -20,6 +22,7 @@ Transforming Brain Tumor Detection with Rapid Precision
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Docker](#running-with-docker)
 - [License](#license)
 
 ## Overview
